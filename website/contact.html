@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Tirhuta Urja Udyog for partnership and investment opportunities">
+    <title>Contact Us - Tirhuta Urja Udyog</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar" data-testid="main-navigation">
+        <div class="container nav-container">
+            <a href="index.html" class="logo" data-testid="logo-link">
+                <span class="logo-text">Tirhuta</span>
+                <span class="logo-subtitle">Urja Udyog</span>
+            </a>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" data-testid="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu" data-testid="nav-menu">
+                <li><a href="index.html" class="nav-link" data-testid="nav-home">Home</a></li>
+                <li><a href="about.html" class="nav-link" data-testid="nav-about">About Us</a></li>
+                <li><a href="business.html" class="nav-link" data-testid="nav-business">Our Business</a></li>
+                <li><a href="operations.html" class="nav-link" data-testid="nav-operations">Operations</a></li>
+                <li><a href="leadership.html" class="nav-link" data-testid="nav-leadership">Leadership</a></li>
+                <li><a href="investors.html" class="nav-link" data-testid="nav-investors">Investors</a></li>
+                <li><a href="contact.html" class="nav-link active cta-btn" data-testid="nav-contact">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header" data-testid="page-header">
+        <div class="container">
+            <h1 class="page-title" data-testid="page-title">Contact Us</h1>
+            <p class="page-subtitle" data-testid="page-subtitle">Let's discuss how we can work together</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" data-testid="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-container" data-testid="contact-form-container">
+                    <div class="form-header">
+                        <h2 class="form-title" data-testid="form-title">Get in Touch</h2>
+                        <p class="form-description" data-testid="form-description">Fill out the form below and our team will get back to you within 24 hours</p>
+                    </div>
+                    <form class="contact-form" id="contactForm" data-testid="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName" class="form-label">First Name <span class="required">*</span></label>
+                                <input type="text" id="firstName" name="firstName" class="form-input" data-testid="input-firstname" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName" class="form-label">Last Name <span class="required">*</span></label>
+                                <input type="text" id="lastName" name="lastName" class="form-input" data-testid="input-lastname" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" class="form-input" data-testid="input-email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="form-input" data-testid="input-phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="organization" class="form-label">Organization</label>
+                            <input type="text" id="organization" name="organization" class="form-input" data-testid="input-organization">
+                        </div>
+                        <div class="form-group">
+                            <label for="inquiry" class="form-label">Inquiry Type <span class="required">*</span></label>
+                            <select id="inquiry" name="inquiry" class="form-select" data-testid="select-inquiry" required>
+                                <option value="">Select an option</option>
+                                <option value="investment">Investment Opportunity</option>
+                                <option value="partnership">Partnership Inquiry</option>
+                                <option value="business">Business Development</option>
+                                <option value="media">Media & Press</option>
+                                <option value="general">General Inquiry</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message <span class="required">*</span></label>
+                            <textarea id="message" name="message" rows="6" class="form-textarea" data-testid="textarea-message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full" data-testid="submit-button">
+                            <span class="btn-text">Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                        <div class="form-message" id="formMessage" data-testid="form-message"></div>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info" data-testid="contact-info">
+                    <div class="info-section" data-testid="info-office">
+                        <div class="info-icon-box">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3 class="info-title">Office Location</h3>
+                        <p class="info-text">Asambia Village<br>Mandvi Taluka<br>Kutch, Gujarat<br>India</p>
+                    </div>
+
+                    <div class="info-section" data-testid="info-email">
+                        <div class="info-icon-box">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3 class="info-title">Email</h3>
+                        <p class="info-text">
+                            <a href="mailto:info@tirhuta.com" data-testid="email-link">info@tirhuta.com</a>
+                        </p>
+                        <p class="info-text">
+                            <a href="mailto:investors@tirhuta.com" data-testid="investors-email-link">investors@tirhuta.com</a>
+                        </p>
+                    </div>
+
+                    <div class="info-section" data-testid="info-phone">
+                        <div class="info-icon-box">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3 class="info-title">Phone</h3>
+                        <p class="info-text">
+                            <a href="tel:+91XXXXXXXXXX" data-testid="phone-link">+91 XXX XXX XXXX</a>
+                        </p>
+                    </div>
+
+                    <div class="info-section" data-testid="info-hours">
+                        <div class="info-icon-box">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3 class="info-title">Business Hours</h3>
+                        <p class="info-text">Monday - Friday<br>9:00 AM - 6:00 PM IST</p>
+                    </div>
+
+                    <div class="social-links" data-testid="social-links">
+                        <h3 class="social-title">Follow Us</h3>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon" data-testid="social-linkedin" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="#" class="social-icon" data-testid="social-twitter" aria-label="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-icon" data-testid="social-facebook" aria-label="Facebook">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Links Section -->
+    <section class="section bg-light quick-links-section" data-testid="quick-links-section">
+        <div class="container">
+            <div class="section-header centered">
+                <h2 class="section-title" data-testid="quick-links-title">Explore More</h2>
+            </div>
+            <div class="quick-links-grid" data-testid="quick-links-grid">
+                <a href="about.html" class="quick-link-card" data-testid="quick-link-about">
+                    <div class="quick-link-icon"><i class="fas fa-info-circle"></i></div>
+                    <h3 class="quick-link-title">About Tirhuta</h3>
+                    <p class="quick-link-text">Learn about our mission and vision</p>
+                </a>
+                <a href="business.html" class="quick-link-card" data-testid="quick-link-business">
+                    <div class="quick-link-icon"><i class="fas fa-briefcase"></i></div>
+                    <h3 class="quick-link-title">Our Business</h3>
+                    <p class="quick-link-text">Explore our CBG solutions</p>
+                </a>
+                <a href="investors.html" class="quick-link-card" data-testid="quick-link-investors">
+                    <div class="quick-link-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3 class="quick-link-title">Investment Opportunity</h3>
+                    <p class="quick-link-text">Partner with India's leading CBG platform</p>
+                </a>
+                <a href="leadership.html" class="quick-link-card" data-testid="quick-link-leadership">
+                    <div class="quick-link-icon"><i class="fas fa-users"></i></div>
+                    <h3 class="quick-link-title">Leadership Team</h3>
+                    <p class="quick-link-text">Meet our experienced executives</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" data-testid="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col" data-testid="footer-about">
+                    <h3 class="footer-title">Tirhuta Urja Udyog</h3>
+                    <p class="footer-text">Building India's clean energy future through innovative waste-to-energy solutions.</p>
+                </div>
+                <div class="footer-col" data-testid="footer-links">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html" data-testid="footer-link-about">About Us</a></li>
+                        <li><a href="business.html" data-testid="footer-link-business">Our Business</a></li>
+                        <li><a href="operations.html" data-testid="footer-link-operations">Operations</a></li>
+                        <li><a href="leadership.html" data-testid="footer-link-leadership">Leadership</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col" data-testid="footer-investors">
+                    <h4 class="footer-heading">For Investors</h4>
+                    <ul class="footer-links">
+                        <li><a href="investors.html" data-testid="footer-link-investors">Investment Opportunity</a></li>
+                        <li><a href="investors.html#expansion" data-testid="footer-link-expansion">Expansion Plans</a></li>
+                        <li><a href="contact.html" data-testid="footer-link-contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col" data-testid="footer-contact">
+                    <h4 class="footer-heading">Contact</h4>
+                    <ul class="footer-contact">
+                        <li data-testid="footer-location"><i class="fas fa-map-marker-alt"></i> Asambia Village, Mandvi Taluka, Kutch, Gujarat</li>
+                        <li data-testid="footer-email"><i class="fas fa-envelope"></i> info@tirhuta.com</li>
+                        <li data-testid="footer-phone"><i class="fas fa-phone"></i> +91 XXX XXX XXXX</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom" data-testid="footer-bottom">
+                <p>&copy; 2026 Tirhuta Urja Udyog Pvt Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
